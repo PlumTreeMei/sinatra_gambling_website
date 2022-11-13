@@ -3,7 +3,7 @@ require "sinatra/reloader"
 require "./User"
 enable :sessions
 
-get "/home" do
+get "/" do
   erb(:home)
 end
 get "/login" do
@@ -50,7 +50,7 @@ post "/sign" do
 end
 get "/bet" do
   unless session[:user]
-    redirect "/home"
+    redirect "/"
   end
   @user=User.get(session[:user])
   @dice=rand(6)+1
@@ -76,5 +76,5 @@ get "/bet" do
 end
 get "/logout" do
   session.clear
-  redirect "/home"
+  redirect "/"
 end
