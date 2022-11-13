@@ -1,0 +1,96 @@
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:#FFFFFF;
+}
+
+h1{
+    padding: 10px;
+    color: #465058;
+}
+label{
+
+    margin: 2px auto;
+    display: inline-block;
+    text-align: left;
+    font-size: 13pt;
+    color: #465058;
+    width: 100pt;
+}
+input{
+    margin: 2px auto;
+    text-align: left;
+    display: inline-block;
+    width: 100pt;
+
+}
+#wrapper {
+    margin: 2px auto;
+    width: 500px;
+    height: 420px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #4980a5;
+}
+
+#header {
+    float: left;
+    height: 75px;
+    width: 500px;
+    background: #c1c0c0;
+}
+
+#content {
+    float:left;
+    background: #FFFFFF;
+    padding: 20px;
+}
+p{color: #2f3194;}
+.logon{
+    text-decoration-line: underline;
+    color: #af3b76;
+}
+.sign{
+    text-decoration-line: underline;
+    color: #4f9223;}
+#button{
+    margin-top:5px ;
+    margin-right: 5px;
+    float: right;
+    width: 50px;
+    background-color: #FFFFFF;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #4980a5;
+    color: #4980a5;
+
+}
+#left{
+    display: inline-block;
+    vertical-align: top;
+    width: 270px;
+}
+#right{
+    margin-left: 10px;
+    padding: 10px;
+    display: inline-block;
+    width: 150px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #4980a5;
+}
+#account{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #4980a5;
+    padding: 5px;
+}
+#logout{
+    float: left;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #4980a5;
+}
+.column{
+    display: flex;
+}

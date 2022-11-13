@@ -1,0 +1,9 @@
+<form action="/sign" method='post'>
+  <label for="user">User</label><input type="text" name="user"><br>
+  <label for="psw">Password</label><input type="password" name="psw"><br>
+  <input type="submit" value="SignUp" id="button"></input>
+</form>
+<% if session[:sign] %>
+  <p><%=session[:sign] %></p>
+  <%session[:sign] = nil %>
+<%end %>

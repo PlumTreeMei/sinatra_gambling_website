@@ -1,0 +1,35 @@
+<div id="top">
+  <div id="left">
+    <p>place your bet on dice number(1 to 6)</p>
+    <%if @money>0 %>
+    <p><%=session[:bet] %></p>
+    <%end %>
+    <form>
+      <label>bet money</label><input type="number" name="money"><br>
+      <label>on</label><input type="number" min="1" max="6" name="on"><br>
+      <input type="submit" value="bet" id="button">
+    </form>
+  </div>
+  <div id="right">
+    <label>total win</label> <input name="win" value="<%=session[:win] %>"><br>
+    <label>total loss</label><input name="loss" value="<%=session[:loss] %>"><br>
+    <label>total profit</label><input name="profit" value="<%=session[:profit]%>"><br>
+  </div>
+</div>
+<div id="bottom">
+  <p>account</p>
+  <div id="account">
+    <div class="column">
+      <label>total win</label>
+      <label>total loss</label>
+      <label>total profit</label>
+    </div>
+    <div class="column">
+      <input name="win" value="<%=@user.accWin %>"><br></input>
+      <input name="loss" value="<%=@user.accLoss %>"><br></input>
+      <input name="profit" value="<%=@user.accProfit %>"><br></input>
+    </div>
+  </div>
+
+</div>
+<button id="button" style="float:left" onclick="window.location.href='/logout';">logout</button>
