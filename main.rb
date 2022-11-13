@@ -2,6 +2,7 @@ require "sinatra"
 require "sinatra/reloader"
 require "./User"
 enable :sessions
+
 get "/home" do
   erb(:home)
 end
