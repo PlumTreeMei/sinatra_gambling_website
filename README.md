@@ -1,4 +1,4 @@
-# sinatra_gambling_website
+
 
 ## Platform: 
 Ubuntu 20.04.5
